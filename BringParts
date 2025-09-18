@@ -56,7 +56,7 @@ Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Label.BorderSizePixel = 0
 Label.Size = UDim2.new(1, 0, 0.160583943, 0)
 Label.FontFace = Font.new("rbxasset://fonts/families/Nunito.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Label.Text = "Tarik Benda by FayintXHub"
+Label.Text = "Bring Parts by FayintXHub"
 Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 Label.TextScaled = true
 Label.TextSize = 14.000
@@ -172,7 +172,7 @@ local DescendantAddedConnection
 local function toggleBlackHole()
 	blackHoleActive = not blackHoleActive
 	if blackHoleActive then
-		Button.Text = "Tarik Benda | On"
+		Button.Text = "Bring Parts | On"
 		for _, v in ipairs(Workspace:GetDescendants()) do
 			ForcePart(v)
 		end
@@ -189,7 +189,7 @@ local function toggleBlackHole()
 			end
 		end)
 	else
-		Button.Text = "Tarik Benda | Off"
+		Button.Text = "Bring Parts | Off"
 		if DescendantAddedConnection then
 			DescendantAddedConnection:Disconnect()
 		end
